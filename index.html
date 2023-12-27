@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <title>Muhalas</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Logo Muhalas -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <!-- FontAwesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <script src="vanilla-tilt.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("Q4CE5v9MJyJ0FPf5V");
+      })();
+    </script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <!-- <label class="logo">Muhamad Alwi Assegaf</label> -->
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li onclick=hideSidebar()><a href="#">Home</a></li>
+        <li onclick=hideSidebar()><a  href="#about">About</a></li>
+        <!-- <li><a href="#">Education</a></li> -->
+        <li onclick=hideSidebar()><a href="#services">Services</a></li>
+        <li onclick=hideSidebar()><a href="#project">My Project</a></li>
+      </ul>
+      <ul>
+        <li><a >Muhalas</a></li>
+        <li><a class="hideOnMobile" href="#">Home</a></li>
+        <li><a class="hideOnMobile" href="#about">About</a></li>
+        <!-- <li><a class="hideOnMobile" href="#">Education</a></li> -->
+        <li><a class="hideOnMobile" href="#services">Services</a></li>
+        <li><a class="hideOnMobile" href="#project">My Project</a></li>
+        <li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></svg></a>
+        </li>
+      </ul>
+    </nav>
+
+  
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex';
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none';
+      }
+    </script>
+    <!-- Akhir Navbar -->
+
+<!-- Jumbotron -->
+<section class="jumbotron">
+    <div class="main-content-jumbotron">
+      <div class="weed">
+        <img src="img/weed.png">
+        <img src="img/weed.png">
+        <img src="img/weed.png">
+        <img src="img/weed.png">
+        <img src="img/weed.png">
+        <img src="img/weed.png">
+        <img src="img/weed.png">
+      </div>
+      <div class="left-box">
+        <div class="card">
+          <img src="img/alwi.jpeg" alt="Alwi Assegaf" class="" />
+        </div>
+          <h1>Muhamad Alwi Assegaf</h1>
+          <li>Fresh Graduate</li>
+      <div class="content-jumbotron">
+        <p>Saya remaja kelahiran tahun 2000. Saya berkeahlian menyusun konsep kreatif. Saya juga memiliki sifat rajin, disiplin, tanggung jawab dan suka belajar hal baru. Saya bercita-cita menjadi seorang programmer dan sedang mendalaminya. Di mulai dari pembuatan website statis ini, yang berisikan tentang beberapa hal dalam hidup saya.
+        </p>
+        <div class="social">
+          <a target="blank" rel="noopener noreferrer" href="https://wa.me/6285736135920"><span class="fab fa-whatsapp"></span></a>
+          <a target="blank" rel="noopener noreferrer" href="https://www.instagram.com/muhalas"><span class="fab fa-instagram"></span></a>
+          <a target="blank" rel="noopener noreferrer" href="https://www.facebook.com/xcn.danger?mibextid=2JQ9oc"><span class="fab fa-facebook"></span></a>
+          <a target="blank" href="https://www.twitter.com/nembetangi"><span class="fab fa-x-twitter"></span></a>
+          <a target="blank" href="http://linkedin.com/in/muhamad-alwi-assegaf-038b3a283"><span class="fab fa-linkedin"></span></a>
+          <a target="blank" href="https://github.com/muhalas"><span class="fab fa-github"></span></a>
+          <!-- <a target="blank" href="https://v4lbet.online/"><span class="fab fa-github"></span></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Akhir Jumbotron -->
+
+<!-- About Us -->
+<section class="about-us" id="about">
+  <h1>ABOUT ME</h1>
+  <div class="about-content">
+      <div class="left about">
+        <div class="card-about">
+          <img src="img/about.jpeg" alt="about">
+        </div>
+      </div>
+      
+      <div class="right about">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non fuga, quos hic, ab explicabo laborum error quas eum doloribus aperiam, quasi adipisci deleniti. Iste quis incidunt blanditiis quaerat, repellendus laborum fugiat molestiae quasi qui aliquid quo enim obcaecati inventore magni nam doloribus adipisci autem dignissimos id quas? Veritatis, quos ducimus voluptate tempora hic consequuntur magnam vero, nisi expedita excepturi voluptatem nesciunt eos ipsa totam fugit sit exercitationem ad ex dolor aliquid quae natus atque quis voluptatibus. Quos, hic consequatur iure reiciendis est provident voluptatibus placeat eligendi dolor tempora at impedit autem ex enim porro quaerat debitis. Rerum, natus! Nulla.</p>
+        <div class="card-info">
+          <div class="left info">
+            <h3>EDUCATION</h3>
+            <!-- <div class="school"> -->
+              <div class="cardSchool">
+                <div class="education">
+                  <div class="ca">
+                    <div class="edu-img">
+                      <div class="front-img">
+                        <img src="img/sd.png" alt="">
+                      </div>
+                    </div>
+                    <div class="back-education">
+                      SDN Pegadungan 012 Pagi
+                    </div>
+                    </div>
+                  </div>
+                  <div class="education">
+                    <div class="ca">
+                      <div class="edu-img">
+                        <div class="front-img">
+                        <img src="img/smp.png" alt="">
+                      </div>
+                      </div>
+                      <div class="back-education">
+                        SMP Negeri 169 Jakarta
+                      </div>
+                    </div>
+                  </div>
+                    <div class="education">
+                      <div class="ca">
+                      <div class="edu-img">
+                        <div class="front-img">
+                        <img src="img/sma.jpg" alt="">
+                      </div>
+                      </div>
+                      <div class="back-education">
+                        SMA Cengkareng 1
+                      </div>
+                    </div>
+                  </div>
+                    <div class="education">
+                      <div class="ca">
+                        <div class="edu-img">
+                          <div class="front-img">
+                          <img src="img/unm.png" alt="">
+                        </div>
+                        </div>
+                        <a class="back-education" target="_blank" href="https://www.nusamandiri.ac.id/nuri/index.js">
+                          Universitas Nusa Mandiri
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+          <!-- <div class="right info">
+            <h3>My Hobies</h3>  
+          </div> -->
+      </div>
+      </div>
+  <!-- </div> -->
+</section>
+<!-- Akhir About Us -->
+
+
+<!-- Vanilla Js -->
+<!-- Services -->
+<section class="services-us" id="services">
+  <h1>SERVICES</h1>
+  <div class="services-content">
+      <div class="one services">
+        <div class="card-services" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="serv">
+            <h4> Web Design </h4>
+            <div class="serv-img">
+              <img src="img/webdesign.webp" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta, ipsa illum sequi quia minus?</p>
+          </div>
+        </div>
+      </div>
+      <div class="two services">
+        <div class="card-services"  data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="serv">
+            <h4> Development </h4>
+            <div class="serv-img">
+              <img src="img/development.webp" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta, ipsa illum sequi quia minus?</p>
+          </div>
+        </div>
+      </div>
+      <div class="three services">
+        <div class="card-services" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="serv">
+            <h4> Search Engine Optimization </h4>
+            <div class="serv-img">
+              <img src="img/seo.webp" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta, ipsa illum sequi quia minus?</p>
+          </div>
+        </div>
+      </div>
+      <div class="four services">
+        <div class="card-services" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+          <div class="serv">
+            <h4> Mobile App </h4>
+            <div class="serv-img">
+              <img src="img/mobileApp.webp" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta, ipsa illum sequi quia minus?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+</section>
+<!-- Akhir Services -->
+
+
+<!-- My Project -->
+<section class="project-us" id="project">
+  <h1>MY PROJECT</h1>
+  <div class="project-content">
+    <div class="card-project">
+        <div class="face front">
+          <img src="img/notaris.png" alt="">
+          <!-- <h5>Notary Public</h5> -->
+        </div>
+        <div class="face back">
+          <h5>Notary Public</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium et autem.</p>
+          <div class="card-link">
+            <a target="blank" href="https://notariskevin.id/">Show</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-project">
+        <div class="face front">
+          <img src="img/queen99.png" alt="">
+          <!-- <h5>Casino Online</h5> -->
+        </div>
+        <div class="face back">
+          <h5>Casino Online</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium et autem.</p>
+          <div class="card-link">
+            <a target="blank" href="https://muhalas.github.io/muhalas99.github.io/#">Show</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-project">
+        <div class="face front">
+          <img src="img/alhamid.png" alt="">
+          <!-- <h5>Tutoring</h5> -->
+        </div>
+        <div class="face back">
+          <h5>Tutoring</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium et autem.</p>
+        <div class="card-link">
+          <a target="blank" href="https://alhamid.my.id/">Show</a>
+        </div>
+      </div>
+    </div>
+      <div class="card-project">
+        <div class="face front">
+          <img src="img/wedding.png" alt="">
+          <!-- <h5>Wedding</h5> -->
+        </div>
+        <div class="face back">
+          <h5>Wedding</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum praesentium et autem.</p>
+        <div class="card-link">
+          <a target="blank" href="https://muhalas04.github.io/">Show</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Akhir My Project -->
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus magni quae similique praesentium voluptate incidunt harum? Magni odit, ipsa dolore blanditiis quo maiores velit voluptas. Necessitatibus tenetur velit
+              corrupti?
+            </p>
+            <div class="social">
+              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/6285736135920"><span class="fab fa-whatsapp"></span></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/muhalas"><span class="fab fa-instagram"></span></a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/xcn.danger?mibextid=2JQ9oc"><span class="fab fa-facebook"></span></a>
+              <a target="_blank" href="https://www.twitter.com/nembetangi"><span class="fab fa-x-twitter"></span></a>
+              <a target="_blank" href="http://linkedin.com/in/muhamad-alwi-assegaf-038b3a283"><span class="fab fa-linkedin"></span></a>
+              <a target="blank" href="https://github.com/muhalas"><span class="fab fa-github"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Rawalele, Kalideres Jakarta Barat</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+62-85736135920</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">muhalasdimana04@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" id="email_id" placeholder="Email Id" required />
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea placeholder="Message" id="message" name="name" cols="25" rows="2" required></textarea>
+              </div>
+              <div class="btn">
+                <button onclick="SendMail()">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        
+        <center>
+          <span class="credit">Created By <a href="#">Muhalas04.github.io</a> | </span>
+          <span class="far fa-copyright"></span><span> 2024</span>
+        </center>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+  </body>
+</html>
