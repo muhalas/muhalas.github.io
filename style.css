@@ -480,9 +480,9 @@ h4 {
   box-shadow: 0px 5px 10px #a1a1a1;
   width: 120px;
   height: 120px;
-  transform: perspective(600px) rotateY(0deg);
+/*   transform: perspective(600px) rotateY(0deg);
   -webkit-transform: perspective(600px) rotateY(0deg);
-  -moz-transform: perspective(600px) rotateY(0deg);
+  -moz-transform: perspective(600px) rotateY(0deg); */
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -536,7 +536,7 @@ h4 {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 @media screen and (max-width: 380px) {
   .education {
@@ -624,6 +624,7 @@ h4 {
   transform: translateZ(-1px);
   -webkit-transform: translateZ(-1px);
   -moz-transform: translateZ(-1px);
+  z-index:-1;
 }
 /* .rgb::after {
   content: "";
