@@ -624,6 +624,7 @@ h4 {
   transform: translateZ(-1px);
   -webkit-transform: translateZ(-1px);
   -moz-transform: translateZ(-1px);
+  z-index:-1;
 }
 /* .rgb::after {
   content: "";
@@ -677,8 +678,11 @@ h4 {
   padding: 20px;
   /* width: 50%; */
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform: perspective(1000px) translateZ(0);
   -webkit-transform: perspective(1000px) translateZ(0);
+  -moz-transform: perspective(1000px) translateZ(0);
 }
 @media screen and (max-width: 1050px) {
   .services-content {
