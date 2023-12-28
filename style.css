@@ -18,10 +18,10 @@ nav {
   /* background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px); */
   position: fixed;
+  z-index: 1000;
   top: 0;
   width: 100%;
   padding: 3px 20px;
-  z-index: 999;
   font-size: 1rem;
   font-weight: 500;
   background-color: white;
@@ -49,6 +49,8 @@ nav a {
   color: black;
   /* border-radius: 5px; */
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 nav a:hover {
   /* background-color: rgb(16, 189, 16, 0.4); */
@@ -478,11 +480,16 @@ h4 {
   box-shadow: 0px 5px 10px #a1a1a1;
   width: 120px;
   height: 120px;
-  /* transform: perspective(600px) rotateY(0deg); */
+  transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  -moz-transform: perspective(600px) rotateY(0deg);
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transition: 0.3s;
   -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+/*    z-index: -1; */
 }
 .edu-img {
   /* object-fit: cover; */
@@ -502,9 +509,12 @@ h4 {
   height: 120px;
   transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  /* overflow: hidden; */
+  -moz-backface-visibility: hidden;
+/*    z-index: -1; */
+  overflow: hidden;
 }
 .back-education {
   display: flex;
@@ -519,11 +529,14 @@ h4 {
   height: 100%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  /* overflow: hidden; */
+  -moz-transform: rotateY(180deg);
+  overflow: hidden;
 }
 @media screen and (max-width: 380px) {
   .education {
@@ -551,6 +564,7 @@ h4 {
 .ca:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 /* .ca:hover .back-education {
   transform: perspective(600px) rotateY(360deg);
@@ -598,14 +612,20 @@ h4 {
   border-top-right-radius: 15px; */
   box-shadow: 0 5px 10px #a1a1a1;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform: perspective(1000px);
+  -webkit-transform: perspective(1000px);
+  -moz-transform: perspective(1000px);
 }
 .card-services:hover {
   box-shadow: 0 5px 10px rgb(16, 189, 16);
   border-radius: 16px;
-  /* transform: translateZ(-1px); */
+  transform: translateZ(-1px);
+  -webkit-transform: translateZ(-1px);
+  -moz-transform: translateZ(-1px);
 }
-.rgb::after {
+/* .rgb::after {
   content: "";
   background: linear-gradient(45deg, #ff0000 0%, #ff9a00 10%, #d0de21 20%, #4fdc4a 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%) repeat 0% 0% / 300% 100%;
   position: absolute;
@@ -626,7 +646,7 @@ h4 {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 .card-services h4 {
   padding: 10px;
   margin: 20px;
@@ -656,8 +676,8 @@ h4 {
   align-items: center;
   padding: 20px;
   /* width: 50%; */
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
+/*   transform-style: preserve-3d;
+  transform: perspective(1000px); */
 }
 @media screen and (max-width: 1050px) {
   .services-content {
@@ -754,16 +774,19 @@ h3:before {
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
   -webkit-transition: 0.5s;
-  z-index:-1;
+  -moz-transition: 0.5s;
+/*   z-index:-1; */
 }
 .card-project .front {
   transform: perspective(600px) rotateY(0deg);
   -webkit-transform: perspective(600px) rotateY(0deg);
-  z-index:-1;
+  -moz-transform: perspective(600px) rotateY(0deg);
+/*   z-index:-1; */
   box-shadow: 0px 5px 10px black;
 }
 .card-project .front img {
@@ -787,7 +810,8 @@ h3:before {
 .card-project .back {
   transform: perspective(600px) rotateY(180deg);
   -webkit-transform: perspective(600px) rotateY(180deg);
-  z-index:-1;
+  -moz-transform: perspective(600px) rotateY(180deg);
+/*   z-index:-1; */
   /* background: rgb(3, 35, 54); */
   background: white;
   padding: 15px;
@@ -818,11 +842,13 @@ h3:before {
 .card-project:hover .front {
   transform: perspective(600px) rotateY(180deg);
   -webkit-transform: perspective(600px) rotateY(180deg);
+  -moz-transform: perspective(600px) rotateY(180deg);
   z-index:-1;
 }
 .card-project:hover .back {
   transform: perspective(600px) rotateY(360deg);
   -webkit-transform: perspective(600px) rotateY(360deg);
+  -moz-transform: perspective(600px) rotateY(360deg);
   z-index:-1;
 }
 
