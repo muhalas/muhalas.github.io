@@ -843,13 +843,13 @@ h3:before {
   transform: perspective(600px) rotateY(180deg);
   -webkit-transform: perspective(600px) rotateY(180deg);
   -moz-transform: perspective(600px) rotateY(180deg);
-  z-index:-1;
+/*   z-index:-1; */
 }
 .card-project:hover .back {
   transform: perspective(600px) rotateY(360deg);
   -webkit-transform: perspective(600px) rotateY(360deg);
   -moz-transform: perspective(600px) rotateY(360deg);
-  z-index:-1;
+/*   z-index:-1; */
 }
 
 /* AKhir My Project */
