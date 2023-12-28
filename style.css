@@ -624,7 +624,7 @@ h4 {
   transform: translateZ(-1px);
   -webkit-transform: translateZ(-1px);
   -moz-transform: translateZ(-1px);
-  z-index:-1;
+/*   z-index:-1; */
 }
 /* .rgb::after {
   content: "";
