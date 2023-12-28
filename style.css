@@ -678,6 +678,7 @@ h4 {
   /* width: 50%; */
   transform-style: preserve-3d;
   transform: perspective(1000px) translateZ(0);
+  -webkit-transform: perspective(1000px) translateZ(0);
 }
 @media screen and (max-width: 1050px) {
   .services-content {
