@@ -550,6 +550,7 @@ h4 {
 }
 .ca:hover {
   transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: perspective(600px) rotateY(180deg);
 }
 /* .ca:hover .back-education {
   transform: perspective(600px) rotateY(360deg);
