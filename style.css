@@ -501,7 +501,9 @@ h4 {
   width: 120px;
   height: 120px;
   transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   /* overflow: hidden; */
 }
 .back-education {
@@ -516,8 +518,11 @@ h4 {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: perspective(600px) rotateY(180deg);
   /* overflow: hidden; */
 }
 @media screen and (max-width: 380px) {
