@@ -500,8 +500,8 @@ h4 {
   align-items: center;
   width: 120px;
   height: 120px;
-  transform: perspective(600px) rotateY(0deg);
-  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   /* overflow: hidden; */
@@ -521,8 +521,8 @@ h4 {
   -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   /* overflow: hidden; */
 }
 @media screen and (max-width: 380px) {
@@ -549,8 +549,8 @@ h4 {
   }
 }
 .ca:hover {
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 /* .ca:hover .back-education {
   transform: perspective(600px) rotateY(360deg);
