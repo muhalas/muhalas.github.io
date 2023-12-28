@@ -607,16 +607,16 @@ h4 {
   border: 2px solid #f1f1f1;
   border-radius: 18px;
   /* background: linear-gradient(#f1f1f1 0%, #f1f1f1 70%, #a1a1a1 100%); */
-  /* cursor: pointer; */
+  cursor: pointer;
   /* border-top-left-radius: 15px;
   border-top-right-radius: 15px; */
   box-shadow: 0 5px 10px #a1a1a1;
-  transform-style: preserve-3d;
+/*   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform: perspective(1000px);
   -webkit-transform: perspective(1000px);
-  -moz-transform: perspective(1000px);
+  -moz-transform: perspective(1000px); */
 }
 .card-services:hover {
   box-shadow: 0 5px 10px rgb(16, 189, 16);
@@ -624,7 +624,6 @@ h4 {
   transform: translateZ(-1px);
   -webkit-transform: translateZ(-1px);
   -moz-transform: translateZ(-1px);
-  z-index:-1;
 }
 /* .rgb::after {
   content: "";
@@ -677,8 +676,8 @@ h4 {
   align-items: center;
   padding: 20px;
   /* width: 50%; */
-/*   transform-style: preserve-3d;
-  transform: perspective(1000px); */
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translateZ(0);
 }
 @media screen and (max-width: 1050px) {
   .services-content {
