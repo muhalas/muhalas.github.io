@@ -978,7 +978,7 @@ footer {
 .right form input:focus,
 .right form textarea:focus {
 /*   outline-color: rgb(16, 189, 16); */
-  box-shadow: 0 0 5px rgb(16, 189, 16);
+  box-shadow: 0 10px 15px rgb(16, 189, 16);
 }
 .right form input {
   height: 35px;
