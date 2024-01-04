@@ -845,16 +845,12 @@ h3:before {
   letter-spacing: 1px;
 }
 .card-project:hover .front {
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-transform: perspective(600px) rotateY(180deg);
-  -moz-transform: perspective(600px) rotateY(180deg);
-/*   z-index:-1; */
+  transform: perspective(600px) rotateY(180deg) translateZ(0);
+  -webkit-transform: perspective(600px) rotateY(180deg) translateZ(0);
 }
 .card-project:hover .back {
-  transform: perspective(600px) rotateY(360deg);
-  -webkit-transform: perspective(600px) rotateY(360deg);
-  -moz-transform: perspective(600px) rotateY(360deg);
-/*   z-index:-1; */
+  transform: perspective(600px) rotateY(360deg) translateZ(0);
+  -webkit-transform: perspective(600px) rotateY(360deg) translateZ(0);
 }
 
 /* AKhir My Project */
