@@ -538,7 +538,7 @@ h4 {
   -moz-transform: rotateY(180deg);
 /*   overflow: hidden; */
 }
-@media screen and (max-width: 380px) {
+/* @media screen and (max-width: 380px) {
   .education {
     padding: 60px;
   }
@@ -561,7 +561,7 @@ h4 {
     height: 100%;
   }
 }
-.ca:hover {
+.ca:hover { */
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
