@@ -44,13 +44,27 @@
         <!-- <li><a class="hideOnMobile" href="#">Education</a></li> -->
         <li><a class="hideOnMobile" href="#services">Services</a></li>
         <li><a class="hideOnMobile" href="#project">My Project</a></li>
+        <img src="moon.png" id="icon">
         <li class="menu-button" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></svg></a>
         </li>
       </ul>
     </nav>
 
-  
+  <!-- Dark Theme -->
+    <script>
+      var icon = document.getElementById("icon");
 
+      icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+          icon.src = "sun.png";
+        }else{
+          icon.src = "moon.png";
+        }
+      }
+    </script>
+    
+    <!-- Sidebar -->
     <script>
       function showSidebar(){
         const sidebar = document.querySelector('.sidebar')
