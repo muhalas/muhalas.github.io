@@ -1,6 +1,23 @@
 /* Import Google Font -  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+/* Dark Theme */
+#icon {
+  width: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+:root {
+  --default-color: white;
+  --second-color: #f1f1f1;
+  --font-color: black;
+  /* --hover-color: rgb(16, 189, 16); */
+}
+.dark-theme {
+  --default-color: black;
+  --second-color: #1a1a1a;
+  --font-color: white;
+}
 /* Navbar */
 * {
   margin: 0;
@@ -15,18 +32,16 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
-  /* background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px); */
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
-  padding: 3px 20px;
+  padding: 3px 10px;
   font-size: 1rem;
   font-weight: 500;
-  background-color: white;
+  background-color: var(--second-color);
   text-transform: uppercase;
-  color: black;
+  color: var(--font-color);
   box-shadow: 1px 1px 3px grey;
 }
 nav ul {
@@ -46,11 +61,9 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: var(--font-color);
   /* border-radius: 5px; */
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
+  transition: 0.2s;
 }
 nav a:hover {
   /* background-color: rgb(16, 189, 16, 0.4); */
@@ -103,12 +116,8 @@ nav li:first-child {
 
 /* jumbotron */
 .jumbotron {
-  /* background-color: white; */
   background: url(img/prog3.webp) no-repeat;
   background-size: cover;
-  /* background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px); */
-  /* height: calc(100vh - 80px); */
 }
 .weed img {
   margin-top: -200px;
@@ -123,7 +132,6 @@ nav li:first-child {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: absolute; */
 }
 @keyframes weed {
   0% {
@@ -232,7 +240,7 @@ nav li:first-child {
     width: 0;
   }
 
-/*   @keyframes weed {
+  @keyframes weed {
     0% {
       top: 0;
       transform: translateY(0);
@@ -247,10 +255,10 @@ nav li:first-child {
       opacity: 1;
     }
     100% {
-      transform: translateY(100vh);
+      transform: translateY(130vh);
       opacity: 0;
     }
-  } */
+  }
 }
 .main-content-jumbotron {
   background-color: rgba(255, 255, 255, 0.384);
@@ -270,15 +278,13 @@ nav li:first-child {
   width: 270px;
   height: 270px;
   border: 2px solid white;
-  /* box-shadow: 3px 3px 5px #f1f1f1; */
-  /* box-shadow: 1px 1px 3px rgb(16, 189, 16); */
   border-radius: 50%;
 }
 .left-box h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: var(--font-color);
   margin-top: 20px;
   font-size: 1.6rem;
 }
@@ -288,7 +294,7 @@ nav li:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: var(--font-color);
   font-size: 1.2rem;
 }
 @media screen and (max-width: 500px) {
@@ -309,7 +315,7 @@ nav li:first-child {
 }
 .main-content-jumbotron p {
   text-align: justify;
-  color: black;
+  color: var(--font-color);
   font-size: 1.0625rem;
 }
 .left-box .content-jumbotron .social {
@@ -328,7 +334,7 @@ nav li:first-child {
   height: 40px;
   width: 40px;
   background: #1a1a1a;
-  box-shadow: 2px 2px 4px #f1f1f1;
+  box-shadow: 2px 2px 4px var(--second-color);
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -349,7 +355,7 @@ nav li:first-child {
   top: -10px;
   height: 1px;
   width: 100%;
-  background: #f1f1f1;
+  background: var(--second-color);
 }
 .left-box .content-jumbotron:after {
   position: absolute;
@@ -364,7 +370,7 @@ nav li:first-child {
 /* About Us */
 .about-us {
   min-height: 100vh;
-  background-color: #f1f1f1;
+  background-color: var(--second-color);
   padding: 80px 40px 20px 40px;
 }
 .about {
@@ -373,7 +379,7 @@ nav li:first-child {
 }
 .about p {
   text-align: justify;
-  color: black;
+  color: var(--font-color);
   font-size: 1.0625rem;
 }
 .about-content {
@@ -399,7 +405,7 @@ nav li:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--font-color);
 }
 .about-us h1:before {
   position: absolute;
@@ -412,8 +418,8 @@ nav li:first-child {
 .card-about img {
   height: 430px;
   width: 340px;
-  border: 4px solid white;
-  box-shadow: 0px 5px 10px black;
+  border: 4px solid var(--default-color);
+  box-shadow: 0px 5px 10px var(--font-color);
   /* border-radius: 50%; */
 }
 @media screen and (max-width: 500px) {
@@ -451,7 +457,7 @@ h3,
 h4 {
   margin-top: 20px;
   text-align: center;
-  color: black;
+  color: var(--font-color);
 }
 .cardSchool {
   flex-wrap: wrap;
@@ -472,7 +478,7 @@ h4 {
   /* box-shadow: 0px 5px 10px #a1a1a1; */
 }
 .ca {
-  background-color: white;
+  background-color: var(--default-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,16 +486,11 @@ h4 {
   box-shadow: 0px 5px 10px #a1a1a1;
   width: 120px;
   height: 120px;
-/*   transform: perspective(600px) rotateY(0deg);
-  -webkit-transform: perspective(600px) rotateY(0deg);
-  -moz-transform: perspective(600px) rotateY(0deg); */
+  /* transform: perspective(600px) rotateY(0deg); */
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   transition: 0.3s;
   -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-/*    z-index: -1; */
 }
 .edu-img {
   /* object-fit: cover; */
@@ -507,13 +508,10 @@ h4 {
   align-items: center;
   width: 120px;
   height: 120px;
-  transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-/*    z-index: -1; */
   overflow: hidden;
 }
 .back-education {
@@ -523,20 +521,17 @@ h4 {
   text-align: center;
   padding: 20px;
   position: absolute;
-  background-color: #f1f1f1;
-  color: black;
+  background-color: var(--second-color);
+  color: var(--font-color);
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-/*   overflow: hidden; */
+  transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  /* overflow: hidden; */
 }
 /* @media screen and (max-width: 380px) {
   .education {
@@ -560,21 +555,19 @@ h4 {
     width: 100%;
     height: 100%;
   }
-}
-.ca:hover { */
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
+} */
+.ca:hover {
+  transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: perspective(600px) rotateY(180deg);
 }
 /* .ca:hover .back-education {
   transform: perspective(600px) rotateY(360deg);
 } */
-
 /* Akhir About Us */
 
 /* Sevices */
 .services-us {
-  background-color: white;
+  background-color: var(--default-color);
   padding-top: 80px;
   min-height: 100vh;
 }
@@ -583,7 +576,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--font-color);
 }
 .services-us h1:before {
   position: absolute;
@@ -603,28 +596,18 @@ h4 {
 .card-services {
   width: 250px;
   height: 400px;
-  background-color: #f1f1f1;
-  border: 2px solid #f1f1f1;
+  background-color: var(--second-color);
+  border: 2px solid var(--second-color);
   border-radius: 18px;
-  /* background: linear-gradient(#f1f1f1 0%, #f1f1f1 70%, #a1a1a1 100%); */
   cursor: pointer;
-  /* border-top-left-radius: 15px;
-  border-top-right-radius: 15px; */
   box-shadow: 0 5px 10px #a1a1a1;
-/*   transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform: perspective(1000px);
-  -webkit-transform: perspective(1000px);
-  -moz-transform: perspective(1000px); */
+  /* transform-style: preserve-3d;
+  transform: perspective(1000px); */
 }
 .card-services:hover {
   box-shadow: 0 5px 10px rgb(16, 189, 16);
   border-radius: 16px;
-  transform: translateZ(-1px);
-  -webkit-transform: translateZ(-1px);
-  -moz-transform: translateZ(-1px);
-/*   z-index:-1; */
+  transform: translateZ(0);
 }
 /* .rgb::after {
   content: "";
@@ -651,7 +634,7 @@ h4 {
 .card-services h4 {
   padding: 10px;
   margin: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--font-color);
 }
 .serv-img {
   display: flex;
@@ -663,11 +646,11 @@ h4 {
   width: 150px;
   height: 120px;
   border: 1px solid grey;
-  box-shadow: 0 5px 10px white;
+  box-shadow: 0 5px 10px var(--default-color);
 }
 .serv p {
   margin: 5px 20px;
-  color: black;
+  color: var(--font-color);
   font-size: 12px;
   text-align: center;
 }
@@ -677,12 +660,8 @@ h4 {
   align-items: center;
   padding: 20px;
   /* width: 50%; */
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform: perspective(1000px) translateZ(0);
-  -webkit-transform: perspective(1000px) translateZ(0);
-  -moz-transform: perspective(1000px) translateZ(0);
+  /* transform-style: preserve-3d;
+  transform: perspective(1000px) translateZ(0); */
 }
 @media screen and (max-width: 1050px) {
   .services-content {
@@ -736,14 +715,14 @@ h3:before {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #f1f1f1;
+  background: var(--second-color);
 }
 .project-us h1 {
   top: 0;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
-  color: black;
+  color: var(--font-color);
 }
 .project-us h1:before {
   position: absolute;
@@ -779,20 +758,14 @@ h3:before {
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-/*   z-index:-1; */
 }
 .card-project .front {
-  transform: perspective(600px) rotateY(0deg);
-  -webkit-transform: perspective(600px) rotateY(0deg);
-  -moz-transform: perspective(600px) rotateY(0deg);
-/*   z-index:-1; */
-  box-shadow: 0px 5px 10px black;
+  transform: perspective(600px) rotateY(0deg) translateZ(0);
+  -webkit-transform: perspective(600px) rotateY(0deg) translateZ(0);
+  box-shadow: 0px 5px 10px var(--font-color);
 }
 .card-project .front img {
   /* object-fit: cover; */
@@ -808,17 +781,15 @@ h3:before {
   width: 100%;
   height: 55px;
   line-height: 45px;
-  color: black;
+  color: var(--font-color);
   background: rgb(255, 255, 255, 0.4);
   /* background: rgba(0, 0, 0, 0.4); */
 }
 .card-project .back {
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-transform: perspective(600px) rotateY(180deg);
-  -moz-transform: perspective(600px) rotateY(180deg);
-/*   z-index:-1; */
+  transform: perspective(600px) rotateY(180deg) translateZ(0);
+  -webkit-transform: perspective(600px) rotateY(180deg) translateZ(0);
   /* background: rgb(3, 35, 54); */
-  background: white;
+  background: var(--default-color);
   padding: 15px;
   /* color: white; */
   display: flex;
@@ -828,29 +799,29 @@ h3:before {
   box-shadow: 0px 5px 10px grey;
 }
 .card-project .back .card-link {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--font-color);
   height: 50px;
   line-height: 50px;
 }
 .card-project .back .card-link a {
-  color: black;
+  color: var(--font-color);
 }
 .card-project .back h5 {
   font-size: 30px;
   margin-top: 20px;
-  color: black;
+  color: var(--font-color);
 }
 .card-project .back p {
-  color: black;
+  color: var(--font-color);
   letter-spacing: 1px;
 }
 .card-project:hover .front {
-  transform: perspective(600px) rotateY(180deg) translateZ(0);
   -webkit-transform: perspective(600px) rotateY(180deg) translateZ(0);
+  transform: perspective(600px) rotateY(180deg) translateZ(0);
 }
 .card-project:hover .back {
-  transform: perspective(600px) rotateY(360deg) translateZ(0);
   -webkit-transform: perspective(600px) rotateY(360deg) translateZ(0);
+  transform: perspective(600px) rotateY(360deg) translateZ(0);
 }
 
 /* AKhir My Project */
@@ -871,7 +842,7 @@ footer {
   bottom: 0px;
   width: 100%;
   /* z-index: 1000; */
-  background-color: white;
+  background-color: var(--default-color);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .main-content {
@@ -885,7 +856,7 @@ footer {
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: black;
+  color: var(--font-color);
 }
 .box .content {
   margin: 20px 0 0 0;
@@ -898,7 +869,7 @@ footer {
   top: -10px;
   height: 2px;
   width: 100%;
-  background: #f1f1f1;
+  background: var(--second-color);
 }
 .box .content:after {
   position: absolute;
@@ -910,7 +881,7 @@ footer {
 }
 .left .content p {
   text-align: justify;
-  color: black;
+  color: var(--font-color);
 }
 .left .content .social {
   margin: 20px 0 0 0;
@@ -922,7 +893,6 @@ footer {
   height: 40px;
   width: 40px;
   background: #1a1a1a;
-  /* box-shadow: 2px 2px 4px rgb(16, 189, 16); */
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -950,7 +920,7 @@ footer {
   font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
-  color: black;
+  color: var(--font-color);
 }
 .center .content .phone {
   margin: 10px 0;
@@ -958,7 +928,7 @@ footer {
 .right form .text {
   font-size: 1.0625rem;
   margin-bottom: 2px;
-  color: black;
+  color: var(--font-color);
 }
 .right form .msg {
   margin-top: 10px;
@@ -967,14 +937,14 @@ footer {
 .right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  background: black;
+  background: var(--font-color);
   padding-left: 10px;
   border: 1px solid rgb(16, 189, 16);
 }
 .right form input:focus,
 .right form textarea:focus {
-/*   outline-color: rgb(16, 189, 16); */
-  box-shadow: 0 10px 15px rgb(16, 189, 16);
+  outline-color: rgb(16, 189, 16);
+  box-shadow: 0 0 5px var(--font-color);
 }
 .right form input {
   height: 35px;
@@ -988,6 +958,7 @@ footer {
   border: none;
   outline: none;
   background: rgb(16, 189, 16);
+  box-shadow: 1px 1px 3px white;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
