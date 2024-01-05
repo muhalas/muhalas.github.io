@@ -507,6 +507,7 @@ h4 {
   -o-transition: 0.3s;
 }
 .edu-img {
+  overflow: hidden;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
