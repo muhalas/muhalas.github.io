@@ -493,11 +493,11 @@ h4 {
   box-shadow: 0px 5px 10px #a1a1a1;
   width: 120px;
   height: 120px;
-  transform: rotateY(0deg);
+/*   transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg); */
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: 0.3s;
