@@ -493,11 +493,18 @@ h4 {
   box-shadow: 0px 5px 10px #a1a1a1;
   width: 120px;
   height: 120px;
-  /* transform: perspective(600px) rotateY(0deg); */
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: 0.3s;
   -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .edu-img {
   /* object-fit: cover; */
@@ -508,18 +515,14 @@ h4 {
   height: 100%;
 }
 .front-img img {
-  /* object-fit: cover; */
+  /*object-fit: cover;
+  */
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 120px;
   height: 120px;
-  transform: perspective(600px) rotateY(0deg);
-  -webkit-transform: perspective(600px) rotateY(0deg);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  overflow: hidden;
 }
 .back-education {
   display: flex;
@@ -529,46 +532,34 @@ h4 {
   padding: 20px;
   position: absolute;
   background-color: var(--second-color);
-  color: var(--font-color);
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-transform: perspective(600px) rotateY(180deg);
-  /* overflow: hidden; */
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
 }
-/* @media screen and (max-width: 380px) {
-  .education {
-    padding: 60px;
-  }
-  .ca {
-    width: 100px;
-    height: 100px;
-  }
-  .edu-img {
-    width: 100%;
-    height: 100%;
-  }
-  .front-img img {
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-  }
-  .back-education {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-  }
-} */
-.ca:hover {
-  transform: perspective(600px) rotateY(180deg);
-  -webkit-transform: perspective(600px) rotateY(180deg);
+.back-education a {
+  color: var(--font-color);
 }
-/* .ca:hover .back-education {
+.education:hover .ca {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+/* .education:hover .back-education {
   transform: perspective(600px) rotateY(360deg);
+  -webkit-transform: perspective(600px) rotateY(360deg);
+  -moz-transform: perspective(600px) rotateY(360deg);
+  -ms-transform: perspective(600px) rotateY(360deg);
+  -o-transform: perspective(600px) rotateY(360deg);
 } */
 /* Akhir About Us */
 
