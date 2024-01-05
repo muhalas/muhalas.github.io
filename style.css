@@ -507,6 +507,9 @@ h4 {
   -o-transition: 0.3s;
 }
 .edu-img {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   /* object-fit: cover; */
   display: flex;
   justify-content: center;
@@ -538,6 +541,7 @@ h4 {
   -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
