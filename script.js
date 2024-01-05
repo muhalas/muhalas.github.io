@@ -16,16 +16,16 @@ function sendMail() {
   };
 
   emailjs.send("service_97euy1r", "template_7npfzoh", templateParams).then(
-    function (response) {
-      console.log("Email terkirim:", response);
+    function (error) {
+      console.log("Email terkirim:", error);
       // Tampilkan alert setelah pengiriman berhasil
-      alert("Email berhasil terkirim!");
+      alert("Gagal mengirim email. Silakan coba lagi!");
+    },
+    function (response) {
+      console.log("Gagal mengirim email:", response);
+      // Tampilkan alert jika pengiriman gagal
+      alert("Email Berhasil Terkirim!.");
     }
-    // function (error) {
-    //   console.log("Gagal mengirim email:", error);
-    //   // Tampilkan alert jika pengiriman gagal
-    //   alert("Gagal mengirim email. Silakan coba lagi.");
-    // }
   );
 }
 
