@@ -20,12 +20,12 @@ function sendMail() {
       console.log("Email terkirim:", response);
       // Tampilkan alert setelah pengiriman berhasil
       alert("Email berhasil terkirim!");
-    },
-    function (error) {
-      console.log("Gagal mengirim email:", error);
-      // Tampilkan alert jika pengiriman gagal
-      alert("Gagal mengirim email. Silakan coba lagi.");
     }
+    // function (error) {
+    //   console.log("Gagal mengirim email:", error);
+    //   // Tampilkan alert jika pengiriman gagal
+    //   alert("Gagal mengirim email. Silakan coba lagi.");
+    // }
   );
 }
 
