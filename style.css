@@ -517,6 +517,7 @@ h4 {
   overflow: hidden;
 }
 .front-img img {
+  transform: translateZ(0);
   padding: 20px;
   display: flex;
   justify-content: center;
