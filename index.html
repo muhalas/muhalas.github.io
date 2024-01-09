@@ -24,6 +24,30 @@
 
     <script src="script.js" defer></script>
   <body>
+     <!-- Music -->
+          <audio autoplay id="song">
+            <source src="music/three_little_birds.mp3" type="audio/mp3">
+          </audio>
+    
+          <div class="controls">
+            <div onclick="play()" class="logo-music" id="ctrlIcon">
+              <img src="logo-music.jpg">
+            </div>
+          </div>
+    
+          <script>
+             var audio = document.getElementById("song");
+             
+              function play(){
+                if(audio.paused){
+               audio.play();
+              }else{
+                audio.pause();
+              }
+              }
+          </script>
+          <!-- Music -->
+    
     <!-- Navbar -->
     <nav>
       <!-- <label class="logo">Muhamad Alwi Assegaf</label> -->
