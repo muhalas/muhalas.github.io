@@ -35,6 +35,15 @@ body {
   background-position: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.logo-music img {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 nav {
   position: fixed;
   z-index: 1000;
