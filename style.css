@@ -14,13 +14,14 @@
   --second-color: #f1f1f1;
   --font-color: black;
   --jumbotron-color: rgba(255, 255, 255, 0.384);
-  /* --hover-color: rgb(16, 189, 16); */
+  --boxShadow-color: grey;
 }
 .dark-theme {
   --default-color: black;
   --second-color: #1a1a1a;
   --font-color: white;
   --jumbotron-color: rgba(27, 21, 21, 0.384);
+  --boxShadow-color: #333333;
 }
 /* Navbar */
 * {
@@ -35,15 +36,6 @@ body {
   background-position: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.logo-music img {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  width: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
 nav {
   position: fixed;
   z-index: 1000;
@@ -55,7 +47,7 @@ nav {
   background-color: var(--second-color);
   text-transform: uppercase;
   color: var(--font-color);
-  box-shadow: 1px 1px 3px grey;
+  box-shadow: 1px 1px 3px var(--boxShadow-color);
 }
 .colored-icon {
   color: var(--font-color);
@@ -97,10 +89,8 @@ nav li:first-child {
   height: 100vh;
   width: 250px;
   background-color: var(--jumbotron-color);
-  /* background-color: rgba(151, 224, 161, 0.2); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  /* box-shadow: -10px 0 10px rgba(206, 206, 206, 0.2); */
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -134,6 +124,20 @@ nav li:first-child {
 .jumbotron {
   background: url(img/prog3.webp) no-repeat;
   background-size: cover;
+}
+.logo-music img {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px var(--boxShadow-color);
 }
 .weed img {
   margin-top: -200px;
@@ -271,8 +275,12 @@ nav li:first-child {
       opacity: 1;
     }
     100% {
-      transform: translateY(130vh);
+      transform: translateY(120vh);
       opacity: 0;
+      -webkit-transform: translateY(120vh);
+      -moz-transform: translateY(120vh);
+      -ms-transform: translateY(120vh);
+      -o-transform: translateY(120vh);
     }
   }
 }
@@ -283,7 +291,6 @@ nav li:first-child {
   align-items: center;
   justify-content: center;
   padding: 100px 80px 40px 80px;
-  /* z-index: 100; */
 }
 .card {
   display: flex;
@@ -306,7 +313,6 @@ nav li:first-child {
 }
 .main-content-jumbotron li {
   margin-top: 3px;
-  /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -341,9 +347,6 @@ nav li:first-child {
   margin: 20px;
 }
 .left-box .content-jumbotron .social a {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   padding: 0 4px;
 }
 .left-box .content-jumbotron .social a span {
@@ -435,7 +438,7 @@ nav li:first-child {
   height: 430px;
   width: 340px;
   border: 4px solid var(--default-color);
-  box-shadow: 0px 5px 10px var(--font-color);
+  box-shadow: 0px 5px 10px var(--boxShadow-color);
   /* border-radius: 50%; */
 }
 @media screen and (max-width: 500px) {
@@ -491,7 +494,6 @@ h4 {
   padding: 70px;
   width: 120px;
   height: 120px;
-  /* box-shadow: 0px 5px 10px #a1a1a1; */
 }
 .ca {
   display: flex;
@@ -508,7 +510,7 @@ h4 {
   width: 100%;
   height: 100%;
   background-color: var(--default-color);
-  box-shadow: 0px 5px 10px #a1a1a1;
+  box-shadow: 0px 5px 10px var(--boxShadow-color);
   transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
@@ -542,7 +544,7 @@ h4 {
   padding: 20px;
   position: absolute;
   background-color: var(--second-color);
-  box-shadow: 0px 5px 10px #a1a1a1;
+  box-shadow: 0px 5px 10px var(--boxShadow-color);
   width: 100%;
   height: 100%;
   transition: 0.3s;
@@ -562,6 +564,7 @@ h4 {
   -o-transform: rotateY(180deg);
 }
 .back-education a {
+  /* transform: translateZ(0); */
   color: var(--font-color);
 }
 .education:hover .edu-img {
@@ -615,7 +618,7 @@ h4 {
   border: 2px solid var(--second-color);
   border-radius: 18px;
   cursor: pointer;
-  box-shadow: 0 5px 10px #a1a1a1;
+  box-shadow: 0 5px 10px var(--boxShadow-color);
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
@@ -661,7 +664,6 @@ h4 {
   width: 150px;
   height: 120px;
   border: 1px solid grey;
-  box-shadow: 0 5px 10px var(--default-color);
 }
 .serv p {
   margin: 5px 20px;
@@ -780,7 +782,7 @@ h3:before {
 .card-project .front {
   transform: perspective(600px) rotateY(0deg) translateZ(-1px);
   -webkit-transform: perspective(600px) rotateY(0deg) translateZ(-1px);
-  box-shadow: 0px 5px 10px grey;
+  box-shadow: 0px 5px 10px var(--boxShadow-color);
 }
 .card-project .front img {
   /* object-fit: cover; */
@@ -811,7 +813,7 @@ h3:before {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 0px 5px 10px grey;
+  box-shadow: 0px 5px 10px var(--boxShadow-color);
 }
 .card-project .back .card-link {
   border-top: 1px solid var(--font-color);
