@@ -70,13 +70,10 @@ nav a {
   display: flex;
   align-items: center;
   color: var(--font-color);
-  /* border-radius: 5px; */
   transition: 0.2s;
 }
 nav a:hover {
-  /* background-color: rgb(16, 189, 16, 0.4); */
   color: rgb(16, 189, 16);
-  /* border-bottom: 2px; */
 }
 nav li:first-child {
   margin-right: auto;
@@ -124,6 +121,7 @@ nav li:first-child {
 .jumbotron {
   background: url(img/prog3.webp) no-repeat;
   background-size: cover;
+  /* min-height: 100dvh; */
 }
 .logo-music img {
   position: fixed;
@@ -168,8 +166,12 @@ nav li:first-child {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(90vh);
     opacity: 0;
+    -webkit-transform: translateY(90vh);
+    -moz-transform: translateY(90vh);
+    -ms-transform: translateY(90vh);
+    -o-transform: translateY(90vh);
   }
 }
 .weed img:nth-child(1) {
@@ -275,12 +277,12 @@ nav li:first-child {
       opacity: 1;
     }
     100% {
-      transform: translateY(120vh);
+      transform: translateY(110vh);
       opacity: 0;
-      -webkit-transform: translateY(120vh);
-      -moz-transform: translateY(120vh);
-      -ms-transform: translateY(120vh);
-      -o-transform: translateY(120vh);
+      -webkit-transform: translateY(110vh);
+      -moz-transform: translateY(110vh);
+      -ms-transform: translateY(110vh);
+      -o-transform: translateY(110vh);
     }
   }
 }
@@ -405,7 +407,6 @@ nav li:first-child {
   padding: 40px 20px 0 20px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 @media screen and (max-width: 900px) {
   .card-about {
