@@ -277,12 +277,12 @@ nav li:first-child {
       opacity: 1;
     }
     100% {
-      transform: translateY(90vh);
+      transform: translateY(110vh);
       opacity: 0;
-      -webkit-transform: translateY(90vh);
-      -moz-transform: translateY(90vh);
-      -ms-transform: translateY(90vh);
-      -o-transform: translateY(90vh);
+      -webkit-transform: translateY(110vh);
+      -moz-transform: translateY(110vh);
+      -ms-transform: translateY(110vh);
+      -o-transform: translateY(110vh);
     }
   }
 }
