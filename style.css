@@ -108,8 +108,8 @@ nav a {
       border-top: 1rem solid rgba(0, 0, 0, .2);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       background-color: var(--header-color);
-      /* backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px); */
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       display: none;
   }
   .navbar.active{
