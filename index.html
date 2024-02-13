@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- Services Vanilla JS -->
     <!-- <script src="vanilla-tilt.min.js"></script> -->
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Box-Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Email JS -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -22,11 +27,10 @@
       })();
     </script>
 
-    <script src="script.js" defer></script>
   <body>
-     <!-- Music -->
+          <!-- Music -->
           <audio autoplay id="song">
-            <source src="three_little_birds.mp3" type="audio/mp3">
+            <source src="music/three_little_birds.mp3" type="audio/mp3">
           </audio>
     
           <div class="controls">
@@ -36,7 +40,7 @@
           </div>
     
           <script>
-             var audio = document.getElementById("song");
+             const audio = document.getElementById("song");
              
               function play(){
                 if(audio.paused){
@@ -47,31 +51,56 @@
               }
           </script>
           <!-- Music -->
-    
     <!-- Navbar -->
-    <nav>
-      <!-- <label class="logo">Muhamad Alwi Assegaf</label> -->
-      <ul class="sidebar">
-        <li onclick=hideSidebar()><a><i class="fa-solid fa-x colored-icon"></i></a></li>
-        <li onclick=hideSidebar()><a href="#">Home</a></li>
-        <li onclick=hideSidebar()><a  href="#about">About</a></li>
-        <li onclick=hideSidebar()><a href="#services">Services</a></li>
-        <li onclick=hideSidebar()><a href="#project">My Project</a></li>
-      </ul>
-      <ul>
-        <li><a >Muhalas</a></li>
-        <li><a class="hideOnMobile" href="#">Home</a></li>
-        <li><a class="hideOnMobile" href="#about">About</a></li>
-        <li><a class="hideOnMobile" href="#services">Services</a></li>
-        <li><a class="hideOnMobile" href="#project">My Project</a></li>
-        <li> <a><img src="moon.png" id="icon"></a></li>
-        <li class="menu-button" onclick=showSidebar()><a><i class="fa-solid fa-bars colored-icon"></i></a>
-        </li>
-      </ul>
-    </nav>
+    <header class="header">
+      <a class="logo" href="#">Muhalas</a>
+
+      <nav class="navbar">
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#project">My Project</a>
+      </nav>
+        <i class='bx bx-moon' id="icon-theme"></i>
+        <i class="fa-solid fa-bars colored-icon" id="menu-button"></i>
+        <!-- <a><img src="moon.png" id="icon"></a> -->
+    </header>
+
+  <!-- Light Theme -->
+  <script>
+    const themeButton = document.getElementById("icon-theme");
+    const lightTheme = 'dark-theme';
+    const iconTheme = 'bx-sun';
+
+    // User Memilih Thema
+    const selectedTheme = localStorage.getItem('selected-theme');
+    const selectedIcon = localStorage.getItem('selected-icon');
+    
+    // Validasi Thema
+    const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
+    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'ri-sun-line'
+
+    // Validasi Ketika User Memilih Thema
+    if (selectedTheme){
+        // Validasi Thema Aktif atau Tidak
+        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+        themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    }
+
+    // Aktivasi Theme manual dengan Button
+    themeButton.addEventListener('click', () => {
+        // Add or Remove the dark / icon theme
+        document.body.classList.toggle(lightTheme)
+        themeButton.classList.toggle(iconTheme)
+        // Menyimpan Thema
+        localStorage.setItem('selected-theme', getCurrentTheme())
+        localStorage.setItem('selected-icon', getCurrentIcon())
+    })
+  </script>
+
 <!-- Dark Theme -->
-    <script>
-      var icon = document.getElementById("icon");
+    <!-- <script>
+      let icon = document.getElementById("icon");
 
       icon.onclick = function(){
         document.body.classList.toggle("dark-theme");
@@ -81,9 +110,10 @@
           icon.src = "moon.png";
         }
       }
-    </script>
+    </script> -->
+    
 <!-- Sidebar -->
-    <script>
+    <!-- <script>
       function showSidebar(){
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'flex';
@@ -92,11 +122,10 @@
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none';
       }
-    </script>
-    <!-- Akhir Navbar -->
+    </script> -->
 
 <!-- Jumbotron -->
-<section class="jumbotron">
+<section class="jumbotron" id="home">
     <div class="main-content-jumbotron">
       <div class="weed">
         <img src="img/weed.png">
@@ -117,7 +146,7 @@
         <p>I am a teenager born in 2000. I specialize in creative drafting. I am also diligent, disciplined, responsible and love learning new things. I aspire to be a programmer and I'm working on it.
         </p>
         <div class="social">
-<!--           <a target="blank" rel="noopener noreferrer" href="https://wa.me/6285736135920"><span class="fab fa-whatsapp"></span></a> -->
+          <a target="blank" rel="noopener noreferrer" href="https://wa.me/6285736135920"><span class="fab fa-whatsapp"></span></a>
           <a target="blank" rel="noopener noreferrer" href="https://www.instagram.com/muhalas"><span class="fab fa-instagram"></span></a>
           <a target="blank" rel="noopener noreferrer" href="https://www.facebook.com/xcn.danger?mibextid=2JQ9oc"><span class="fab fa-facebook"></span></a>
           <a target="blank" href="https://www.twitter.com/nembetangi"><span class="fab fa-x-twitter"></span></a>
@@ -315,6 +344,19 @@
         </div>
       </div>
     </div>
+      <div class="card-project">
+        <div class="face front">
+          <img src="img/vivianty.png" alt="">
+          <!-- <h5>Wedding</h5> -->
+        </div>
+        <div class="face back">
+          <h5>Wedding</h5>
+          <p>This website is created with HTML, CSS, and Javascript</p>
+        <div class="card-link">
+          <a target="blank" href="https://muhalas.github.io/vivianty.github.io/portfolio">Show</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!-- Akhir My Project -->
@@ -327,10 +369,10 @@
           <h2>About us</h2>
           <div class="content">
             <p>
-             Hi, my name is Muhamad Alwi Assegaf, you can call me Alwi. I am a junior frontend developer. A new graduate of 2023 with a GPA of 3.57, I majored in information systems at Nusa Mandiri University.
+              Hi, my name is Muhamad Alwi Assegaf, you can call me Alwi. I am a junior frontend developer. A new graduate of 2023 with a GPA of 3.57, I majored in information systems at Nusa Mandiri University.
             </p>
             <div class="social">
-<!--               <a target="_blank" rel="noopener noreferrer" href="https://wa.me/6285736135920"><span class="fab fa-whatsapp"></span></a> -->
+              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/6285736135920"><span class="fab fa-whatsapp"></span></a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/muhalas"><span class="fab fa-instagram"></span></a>
               <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/xcn.danger?mibextid=2JQ9oc"><span class="fab fa-facebook"></span></a>
               <a target="_blank" href="https://www.twitter.com/nembetangi"><span class="fab fa-x-twitter"></span></a>
@@ -380,12 +422,15 @@
       <div class="bottom">
         
         <center>
-          <span class="credit">Created By <a target="_blank" href="https://muhalas04.github.io/">Muhalas04.github.io</a> | </span>
+          <span class="credit">Created By <a href="#">Muhalas.github.io</a> | </span>
           <span class="far fa-copyright"></span><span> 2024</span>
         </center>
       </div>
     </footer>
     <!-- Akhir Footer -->
+
+    <!-- Custom Js -->
+    <script src="script.js"></script>
 
   </body>
 </html>
