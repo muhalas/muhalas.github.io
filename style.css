@@ -97,7 +97,7 @@ nav a {
     margin-right: 1rem;
   }
   .navbar{
-      z-index: 1000;
+      z-index: 100;
       position: absolute;
       text-align: center;
       top: 100%;
@@ -114,6 +114,9 @@ nav a {
   }
   .navbar.active{
     display: block;
+  }
+  .logo{
+    font-size: 1.1650rem;
   }
   .navbar a{
       display: block;
@@ -330,6 +333,9 @@ nav a {
   font-size: 1.2rem;
 }
 @media screen and (max-width: 500px) {
+  .header{
+    padding: 10px 20px;
+  }
   .card img {
     width: 240px;
     height: 240px;
@@ -716,7 +722,6 @@ h4 {
   /* margin-top: 20px; */
 }
 h3:before {
-  /* top: 1px; */
   position: absolute;
   content: "";
   margin-top: 30px;
@@ -886,7 +891,6 @@ footer {
 .box .content {
   margin: 20px 0 0 0;
   position: relative;
-  z-index: 100;
 }
 .box .content:before {
   position: absolute;
