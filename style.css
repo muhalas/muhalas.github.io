@@ -57,7 +57,7 @@ body {
 .header.sticky{
   border-bottom: .1rem solid rgba(0,0,0, .2);
   box-shadow: 1px 1px 3px var(--boxShadow-color);
-  background-color: var(--jumbotron-color);
+  background-color: var(--header-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
