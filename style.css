@@ -16,7 +16,7 @@
   --font-color: black;
   --jumbotron-color: rgba(255, 255, 255, 0.384);
   --boxShadow-color: grey;
-  --header-color: rgba(255, 255, 255, 0.8);
+  --header-color: rgba(255, 255, 255, 0.7);
 }
 .dark-theme {
   --default-color: black;
@@ -24,7 +24,7 @@
   --font-color: white;
   --jumbotron-color: rgba(27, 21, 21, 0.384);
   --boxShadow-color: #333333;
-  --header-color: rgba(0,0,0, .8);
+  --header-color: rgba(0,0,0, .7);
 }
 /* Navbar */
 * {
@@ -58,8 +58,8 @@ body {
   border-bottom: .1rem solid rgba(0,0,0, .2);
   box-shadow: 1px 1px 3px var(--boxShadow-color);
   background-color: var(--header-color);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .colored-icon {
   color: var(--font-color);
@@ -108,8 +108,8 @@ nav a {
       border-top: 1rem solid rgba(0, 0, 0, .2);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       background-color: var(--header-color);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
       display: none;
   }
   .navbar.active{
