@@ -717,7 +717,6 @@ h4 {
 }
 h3:before {
   /* top: 1px; */
-  z-index: 100;
   position: absolute;
   content: "";
   margin-top: 30px;
